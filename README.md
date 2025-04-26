@@ -1,13 +1,51 @@
-# KnotebookLM RAG Service
-To explain the code I'm going to go through what each of the 5 .pys does
+KnotebookLM
 
-api.py - It creates a flask using the info from the Json folder
-. then there's the text split function, which does what it is named, and there is the storage of the embedding id's.
+Overview
 
-embed_and_store.py - Starts by importing Langchain and Google gen ai. In this there is the vector storage and at the end of this code, there is the edition of documents.
+KnotebookLM is a RAG system that sends POST requests containing text and documents. Currently, it handles request submission and embedding creation. Will expand code in future.
 
-post.py - This is just code to use on a test text.
+Models
 
-split.py - Starts by importing document and reverse text splitter. This is the code that defines the earlier text split function used in api.py, that gets a document as input and returns a list of split documents as an output.
+The system uses Google Generative AI for embeddings, with plans to incorporate LLM prompt interactions. Note: The API key is currently hard-coded.
 
-test_split.py - This is the testing for the split function.
+
+
+Getting Started
+
+
+
+
+
+Optionally, add your Google API key to a .env file.
+
+
+
+Provide your desired text input or use the default.
+
+
+
+Run python api.py to start the web server.
+
+
+
+
+
+Open the generated website in your browser.
+
+
+
+Run python post.py to send a POST request.
+
+
+
+
+
+On success, the response will include the number of text splits (based on chunk size and text length).
+
+
+
+On failure, an error status code will be displayed.
+
+Making a Request
+
+Refer to post.py for details on constructing requests.
