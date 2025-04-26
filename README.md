@@ -21,7 +21,7 @@ The embedding code configures uses Google Generative AI embeddings with the text
 
 post.py
 
-This code sends a JSON file containing a sample text and id's  to the Flask server's endpoint. It uses the requests library to make the POST request with given text.It then prints the response JSON containing embedding IDs.
+This code sends a JSON file containing a sample text and id's  to the Flask server's endpoint. It uses the requests library to make the POST request with given text. It then prints the response JSON containing embedding IDs.
 
 split.py
 
